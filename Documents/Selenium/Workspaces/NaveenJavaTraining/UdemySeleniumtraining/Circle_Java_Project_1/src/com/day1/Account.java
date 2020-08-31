@@ -22,6 +22,7 @@ public class Account {
 		if (KYCdocument.equalsIgnoreCase("Passport") || KYCdocument.equalsIgnoreCase("PANCard")) {
 			return true;
 		} else {
+			System.out.println("KYC document error!! [Pancard or Passport only]");
 			return false;
 		}
 
@@ -32,6 +33,7 @@ public class Account {
 		if (accountType == 'S' || accountType == 'C') {
 			return true;
 		} else {
+			System.out.println("Account type error!! [Savings or Current accounts only]");
 			return false;
 		}
 	}
