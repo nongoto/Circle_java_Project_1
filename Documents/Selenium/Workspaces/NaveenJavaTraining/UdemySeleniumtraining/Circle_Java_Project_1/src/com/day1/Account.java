@@ -14,7 +14,8 @@ public class Account {
 			return accountNumber;
 		} else {
 			System.out.println("Account cannot be created!!!!");
-			return null;
+			return "0";
+			
 		}
 	}
 
